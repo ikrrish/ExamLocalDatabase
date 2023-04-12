@@ -14,6 +14,13 @@
 		DECA809829E67B2E00E5AE18 /* ExamLocalDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DECA809629E67B2E00E5AE18 /* ExamLocalDatabase.xcdatamodeld */; };
 		DECA809A29E67B3000E5AE18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DECA809929E67B3000E5AE18 /* Assets.xcassets */; };
 		DECA809D29E67B3000E5AE18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECA809B29E67B3000E5AE18 /* LaunchScreen.storyboard */; };
+		DECA80A529E67B4500E5AE18 /* fmdb.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA80A429E67B4500E5AE18 /* fmdb.swift */; };
+		DECA80B229E6833D00E5AE18 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA80A729E6833D00E5AE18 /* FMDatabasePool.m */; };
+		DECA80B329E6833D00E5AE18 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA80A929E6833D00E5AE18 /* FMDatabaseQueue.m */; };
+		DECA80B429E6833D00E5AE18 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA80AC29E6833D00E5AE18 /* FMResultSet.m */; };
+		DECA80B529E6833D00E5AE18 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA80AE29E6833D00E5AE18 /* FMDatabaseAdditions.m */; };
+		DECA80B629E6833D00E5AE18 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = DECA80B029E6833D00E5AE18 /* FMDatabase.m */; };
+		DECA80B929E68FA700E5AE18 /* FMDB in Frameworks */ = {isa = PBXBuildFile; productRef = DECA80B829E68FA700E5AE18 /* FMDB */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,19 @@
 		DECA809929E67B3000E5AE18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DECA809C29E67B3000E5AE18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DECA809E29E67B3000E5AE18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DECA80A429E67B4500E5AE18 /* fmdb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fmdb.swift; sourceTree = "<group>"; };
+		DECA80A629E6833C00E5AE18 /* ExamLocalDatabase-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExamLocalDatabase-Bridging-Header.h"; sourceTree = "<group>"; };
+		DECA80A729E6833D00E5AE18 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		DECA80A829E6833D00E5AE18 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		DECA80A929E6833D00E5AE18 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		DECA80AA29E6833D00E5AE18 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		DECA80AB29E6833D00E5AE18 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		DECA80AC29E6833D00E5AE18 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		DECA80AD29E6833D00E5AE18 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		DECA80AE29E6833D00E5AE18 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		DECA80AF29E6833D00E5AE18 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		DECA80B029E6833D00E5AE18 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		DECA80B129E6833D00E5AE18 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DECA80B929E68FA700E5AE18 /* FMDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,10 +83,23 @@
 				DECA808F29E67B2E00E5AE18 /* SceneDelegate.swift */,
 				DECA809129E67B2E00E5AE18 /* ViewController.swift */,
 				DECA809329E67B2E00E5AE18 /* Main.storyboard */,
+				DECA80A429E67B4500E5AE18 /* fmdb.swift */,
 				DECA809929E67B3000E5AE18 /* Assets.xcassets */,
 				DECA809B29E67B3000E5AE18 /* LaunchScreen.storyboard */,
 				DECA809E29E67B3000E5AE18 /* Info.plist */,
 				DECA809629E67B2E00E5AE18 /* ExamLocalDatabase.xcdatamodeld */,
+				DECA80A829E6833D00E5AE18 /* FMDatabase.h */,
+				DECA80B029E6833D00E5AE18 /* FMDatabase.m */,
+				DECA80AD29E6833D00E5AE18 /* FMDatabaseAdditions.h */,
+				DECA80AE29E6833D00E5AE18 /* FMDatabaseAdditions.m */,
+				DECA80AF29E6833D00E5AE18 /* FMDatabasePool.h */,
+				DECA80A729E6833D00E5AE18 /* FMDatabasePool.m */,
+				DECA80B129E6833D00E5AE18 /* FMDatabaseQueue.h */,
+				DECA80A929E6833D00E5AE18 /* FMDatabaseQueue.m */,
+				DECA80AA29E6833D00E5AE18 /* FMDB.h */,
+				DECA80AB29E6833D00E5AE18 /* FMResultSet.h */,
+				DECA80AC29E6833D00E5AE18 /* FMResultSet.m */,
+				DECA80A629E6833C00E5AE18 /* ExamLocalDatabase-Bridging-Header.h */,
 			);
 			path = ExamLocalDatabase;
 			sourceTree = "<group>";
@@ -86,6 +120,9 @@
 			dependencies = (
 			);
 			name = ExamLocalDatabase;
+			packageProductDependencies = (
+				DECA80B829E68FA700E5AE18 /* FMDB */,
+			);
 			productName = ExamLocalDatabase;
 			productReference = DECA808A29E67B2E00E5AE18 /* ExamLocalDatabase.app */;
 			productType = "com.apple.product-type.application";
@@ -102,6 +139,7 @@
 				TargetAttributes = {
 					DECA808929E67B2E00E5AE18 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -114,6 +152,9 @@
 				Base,
 			);
 			mainGroup = DECA808129E67B2E00E5AE18;
+			packageReferences = (
+				DECA80B729E68FA700E5AE18 /* XCRemoteSwiftPackageReference "fmdb" */,
+			);
 			productRefGroup = DECA808B29E67B2E00E5AE18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,8 +183,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DECA809229E67B2E00E5AE18 /* ViewController.swift in Sources */,
+				DECA80B229E6833D00E5AE18 /* FMDatabasePool.m in Sources */,
 				DECA809829E67B2E00E5AE18 /* ExamLocalDatabase.xcdatamodeld in Sources */,
+				DECA80B629E6833D00E5AE18 /* FMDatabase.m in Sources */,
+				DECA80B329E6833D00E5AE18 /* FMDatabaseQueue.m in Sources */,
+				DECA80A529E67B4500E5AE18 /* fmdb.swift in Sources */,
+				DECA80B529E6833D00E5AE18 /* FMDatabaseAdditions.m in Sources */,
 				DECA808E29E67B2E00E5AE18 /* AppDelegate.swift in Sources */,
+				DECA80B429E6833D00E5AE18 /* FMResultSet.m in Sources */,
 				DECA809029E67B2E00E5AE18 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -308,6 +356,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.info.ExamLocalDatabase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ExamLocalDatabase/ExamLocalDatabase-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -318,6 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -335,6 +386,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.info.ExamLocalDatabase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ExamLocalDatabase/ExamLocalDatabase-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -362,6 +414,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DECA80B729E68FA700E5AE18 /* XCRemoteSwiftPackageReference "fmdb" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ccgus/fmdb.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DECA80B829E68FA700E5AE18 /* FMDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DECA80B729E68FA700E5AE18 /* XCRemoteSwiftPackageReference "fmdb" */;
+			productName = FMDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DECA809629E67B2E00E5AE18 /* ExamLocalDatabase.xcdatamodeld */ = {
